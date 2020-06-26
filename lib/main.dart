@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:youtubeapp/book_list_page.dart';
 import 'package:youtubeapp/main_model.dart';
 
 void main() {
@@ -31,7 +32,10 @@ class MyApp extends StatelessWidget {
                     RaisedButton(
                         child: Text('ボタン'),
                         onPressed:(){
-                          model.changeMainText();
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => BookList()),
+                          );
                         }
                     ),
                   ],
