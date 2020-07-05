@@ -32,5 +32,6 @@ task clean(type: Delete) {
 }
 
 dependencies {
+    apply plugin: 'application'
     implementation 'androidx.annotation:annotation:1.1.0'
 }
